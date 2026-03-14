@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TipCalculator.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <HorizontalStackLayout>
+                <Label
+                Text="Valor da refeição" />
+
+                <Entry
+            x:Name="RefeicaoEntry"
+             Placeholder="Digite aqui o valor da refeição"
+             Keyboard="Numeric"/>
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+
+            
+            <Label
+                Text="Valor da gorjeta"/>
+
+            <Entry
+            x:Name="GorjetaEntry"
+             Placeholder="Valor da Gorjeta"
+             Keyboard="Numeric"/>
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+            
+            <Label
+             Text="Porcentagem da Gorjeta"
+                IsEnabled="False"/>
+
+            <Entry
+            x:Name="PorcentagemEntry"
+            Placeholder="30%"
+            Keyboard="Numeric"/>
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+
+            <Label
+            Text="Valor Total"/>
+
+            <Entry
+            x:Name="ValortotalEntry"
+             Placeholder="ValorTotal"
+             Keyboard="Text"/>
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+
+            <Label
+             Text="Quantidade de pessoa"/>
+
+            <Entry
+                x:Name="QuantidadedePessoaEntry"
+            Placeholder="Quantidade de pessoa"
+            Keyboard="Text"/>
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+
+            <Label
+               Text="Valor por Pessoa"/>
+
+            <Entry
+                x:Name="ValorporPessoaEntry"
+                 Placeholder="Valor por pessoa"
+                 Keyboard="Text"/>
+
+            </HorizontalStackLayout>
+
+            <Button
+                x:Name="calcular"
+                Text="calcular"/>
+
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

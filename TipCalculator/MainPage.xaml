@@ -38,10 +38,12 @@
              Text="Porcentagem da Gorjeta"
                 IsEnabled="False"/>
 
-            <Entry
+                <Entry
             x:Name="PorcentagemEntry"
             Placeholder="30%"
-            Keyboard="Numeric"/>
+            Keyboard="Numeric"
+            WidthRequest="150"/>
+
 
             </HorizontalStackLayout>
 
@@ -81,9 +83,27 @@
 
             </HorizontalStackLayout>
 
+            <Slider 
+                Minimum="0"
+                Maximum="100"
+                SemanticProperties.Description="Porcentagem da barra"
+                ValueChanged="Slider_ValueChanged"
+                WidthRequest="150"  />
+
+            <Label
+                x:Name="displayLabel"
+                    Text="(uninitialized)"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center" />
+
+
+
             <Button
-                x:Name="calcular"
-                Text="calcular"/>
+                
+                x:Name="CalcularButton"
+                Text="calcular"
+                Clicked="CalcularButton_Clicked"
+                />
 
 
         </VerticalStackLayout>

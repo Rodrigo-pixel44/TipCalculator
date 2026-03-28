@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TipCalculator.SobrePage"
+             Title="SobrePage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Image Source="gengar.jpeg" WidthRequest="50" HeightRequest="50"></Image>
+
+
+        <Label
+            Text="Feito por: Rodrigo"
+            Style=""
+      SemanticProperties.Description="Porcentagem da barra"
+      WidthRequest="150"  />
+
+
+
+        <Button
+                
+                x:Name="PerfilButton"
+                Text="ir para o github"
+                Clicked="PerfilButton_Clicked"
+                />
+
+
+
+    </VerticalStackLayout>
+</ContentPage>

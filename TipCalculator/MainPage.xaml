@@ -21,11 +21,11 @@
 
             <HorizontalStackLayout>
 
-            
-            <Label
+
+                <Label
                 Text="Valor da gorjeta"/>
 
-            <Entry
+                <Entry
             x:Name="GorjetaEntry"
              Placeholder="Valor da Gorjeta"
              Keyboard="Numeric"/>
@@ -33,8 +33,8 @@
             </HorizontalStackLayout>
 
             <HorizontalStackLayout>
-            
-            <Label
+
+                <Label
              Text="Porcentagem da Gorjeta"
                 IsEnabled="False"/>
 
@@ -49,10 +49,10 @@
 
             <HorizontalStackLayout>
 
-            <Label
+                <Label
             Text="Valor Total"/>
 
-            <Entry
+                <Entry
             x:Name="ValortotalEntry"
              Placeholder="ValorTotal"
              Keyboard="Text"/>
@@ -61,10 +61,10 @@
 
             <HorizontalStackLayout>
 
-            <Label
+                <Label
              Text="Quantidade de pessoa"/>
 
-            <Entry
+                <Entry
                 x:Name="QuantidadedePessoaEntry"
             Placeholder="Quantidade de pessoa"
             Keyboard="Text"/>
@@ -73,10 +73,10 @@
 
             <HorizontalStackLayout>
 
-            <Label
+                <Label
                Text="Valor por Pessoa"/>
 
-            <Entry
+                <Entry
                 x:Name="ValorporPessoaEntry"
                  Placeholder="Valor por pessoa"
                  Keyboard="Text"/>
@@ -105,8 +105,8 @@
                 Clicked="CalcularButton_Clicked"
                 />
 
-
         </VerticalStackLayout>
+
 
     </ScrollView>
 
